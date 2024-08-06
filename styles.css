@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for the whole page */
+}
+
+header {
+    background: #f4f4f4; /* Light gray background */
+    padding: 20px 20px 40px; /* Increased bottom padding for space between header content and image */
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Subtle border for separation */
+    position: relative; /* Establishes the positioning context for absolute children */
+}
+
+/* Styles for the navigation bar */
+nav {
+    position: absolute; /* Positioning navigation absolutely within the header */
+    top: 20px; /* Position below the padding of the header */
+    left: 0; /* Align with the left edge of the header */
+    width: 100%; /* Ensure it spans the full width of the header */
+    z-index: 1; /* Ensure it stays above the background image */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox to arrange navigation items horizontally */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex; /* Flexbox for centering icons and text */
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav ul li a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Styles for the header image */
+.header-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: absolute; /* Positioning the image absolutely */
+    top: 0; /* Align with the top of the header */
+    left: 0; /* Align with the left of the header */
+    width: 100%; /* Ensure it covers the entire width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+/* Styles for the introduction section within the main content area */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Max width for better readability */
+    margin: 0 auto; /* Center the content */
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 8px; /* Rounded corners for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure it stays above the background image */
+}
+
+/* Specific styles for the content section to ensure readability */
+section {
+    position: relative;
+    z-index: 2; /* Ensure section content stays above other elements */
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+    font-size: 2em; /* Larger font size for main headings */
+    margin-top: 80px; /* Space above the heading to prevent overlap */
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd; /* Underline for section headers */
+    padding-bottom: 10px; /* Padding below the text */
+    margin-bottom: 20px; /* Margin below the header */
+    font-size: 1.5em; /* Larger font size for sub-headings */
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+footer {
+    background: #f4f4f4; /* Light gray background */
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #ddd; /* Subtle border for separation */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+footer p {
+    margin: 0;
+    color: #333; /* Dark text color */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0; /* Margin above the footer links */
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+/* Common styles for the background image on other pages */
+.page-background {
+    background-image: url('book.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    position: relative; /* Ensure correct stacking context */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.page-background .content {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 20px; /* Ensure padding for readability */
+    border-radius: 8px; /* Rounded corners for content */
+    max-width: 1200px; /* Max width for better readability */
+    margin: 0 auto; /* Center the content */
+}
